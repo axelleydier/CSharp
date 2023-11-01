@@ -12,3 +12,31 @@
 /Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.pdb
 /Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.genruntimeconfig.cache
 /Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/obj/Debug/net6.0/ref/microsoft.botsay.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/microsoft.botsay
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/microsoft.botsay.deps.json
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/microsoft.botsay.runtimeconfig.json
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/microsoft.botsay.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/microsoft.botsay.pdb
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.GeneratedMSBuildEditorConfig.editorconfig
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.AssemblyInfoInputs.cache
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.AssemblyInfo.cs
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.csproj.CoreCompileInputs.cache
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/refint/microsoft.botsay.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.pdb
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.genruntimeconfig.cache
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/ref/microsoft.botsay.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Http.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/OpenAI_API.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.csproj.AssemblyReference.cache
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.csproj.CopyComplete

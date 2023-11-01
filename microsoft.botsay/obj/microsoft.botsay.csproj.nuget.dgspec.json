@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "/Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/microsoft.botsay.csproj": {}
+    "/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/microsoft.botsay.csproj": {}
   },
   "projects": {
-    "/Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/microsoft.botsay.csproj": {
+    "/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/microsoft.botsay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/microsoft.botsay.csproj",
+        "projectUniqueName": "/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/microsoft.botsay.csproj",
         "projectName": "microsoft.botsay",
-        "projectPath": "/Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/microsoft.botsay.csproj",
+        "projectPath": "/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/microsoft.botsay.csproj",
         "packagesPath": "/Users/axelleydier/.nuget/packages/",
-        "outputPath": "/Users/axelleydier/Documents/YnovProject/CSharp/microsoft.botsay/obj/",
+        "outputPath": "/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/Users/axelleydier/.nuget/NuGet/NuGet.Config"
         ],
@@ -23,7 +20,6 @@
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +37,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "OpenAI": {
+              "target": "Package",
+              "version": "[1.7.2, )"
+            },
+            "OpenAI-DotNet": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }

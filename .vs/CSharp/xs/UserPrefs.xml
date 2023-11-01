@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{5AE49587-ABC5-44BD-8409-88ABE4F6109B}|Default">
+  <MonoDevelop.Ide.ItemProperties.microsoft.botsay PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="microsoft.botsay/Program.cs">
+    <Files>
+      <File FileName="microsoft.botsay/Program.cs" Line="115" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CSharp">
+            <Node name="microsoft.botsay">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
