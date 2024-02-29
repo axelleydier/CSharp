@@ -40,3 +40,6 @@
 /Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/OpenAI_API.dll
 /Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.csproj.AssemblyReference.cache
 /Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/obj/Debug/net6.0/microsoft.botsay.csproj.CopyComplete
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/OpenAI-DotNet.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/DotNetEnv.dll
+/Users/axelleydier/Documents/YnovProject/CLICSharp/Sans titre/microsoft.botsay/bin/Debug/net6.0/Sprache.dll

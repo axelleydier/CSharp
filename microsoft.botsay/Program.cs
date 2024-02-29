@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenAI;
 using OpenAI_API;
 using OpenAI_API.Completions;
+using DotNetEnv;
 
 namespace microsoft.botsay;
 
@@ -14,26 +15,33 @@ internal class Program
 
     static void Main(string[] args)
     {
-        if (args.Length > 0) 
+        if (args.Length > 0)
         {
             foreach (string arg in args)
             {
 
-             Dictionary<string, Action> actions = new Dictionary<string, Action>
+                Dictionary<string, Action> actions = new Dictionary<string, Action>
         {
-            { "--c", async () => {  await Program.Correction(); } },
-            { "--t", async () => {  await Program.TraductionAsync(); } },
+            { "--c", async () => {
+                
+                Console.WriteLine("Enter le texte à corriger: ");
+                string inputText = Console.ReadLine();
+                string correctedText = await Correction(inputText);
+                Console.WriteLine("Texte d'origine :");
+                Console.WriteLine("\nTexte corrigé : ");
+                Console.WriteLine(correctedText); } },
+            { "--t", async () => {  /*await Program.TraductionAsync(); */} },
             { "create", () => { Program.CreateReactApp();} }
         };
 
-        if (actions.ContainsKey(arg))
-        {
-            actions[arg]();
-        }
-        else
-        {
-            Console.WriteLine("Option non valide.");
-        }
+                if (actions.ContainsKey(arg))
+                {
+                    actions[arg]();
+                }
+                else
+                {
+                    Console.WriteLine("Option non valide.");
+                }
             }
         }
         else
@@ -41,42 +49,49 @@ internal class Program
             Console.WriteLine("Aucun argument n'a été passé en ligne de commande.");
         }
     }
-
-    static async Task Correction()
-    {        
-        // Définissez l'URL de l'API OpenAI.
-        string apiKey = "CLE_API";
-        string apiUrl = "https://api.openai.com/v1/engines/davinci/completions";
-
-        Console.WriteLine("Entrer le texte à corriger :");
-
-        string textToCorrect = Console.ReadLine()!;
-
-        using HttpClient client = new HttpClient();
-        client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
-
-        string prompt = $"Corrige les fautes d'orthographe dans le texte suivant : \"{textToCorrect}\".";
-
-        var content = new FormUrlEncodedContent(new[]
+    static async Task<string> Correction(string? inputText)
+    { 
         {
-                new KeyValuePair<string, string>("prompt", prompt),
-                new KeyValuePair<string, string>("max_tokens", "50") // Nombre maximum de tokens dans la réponse
-            });
+        DotNetEnv.Env.Load(); // Charge les variables d'environnement à partir d'un fichier .env
 
-        var response = await client.PostAsync(apiUrl, content);
-
-        if (response.IsSuccessStatusCode)
+        string openaiApiKey = Environment.GetEnvironmentVariable("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");
+        if (string.IsNullOrEmpty(openaiApiKey))
         {
-            var responseContent = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(responseContent);
+            Console.WriteLine("Veuillez définir la variable d'environnement OPENAI_API_KEY avec votre clé API OpenAI.");
+            return inputText;
         }
-        else
+
+        using (HttpClient httpClient = new HttpClient())
         {
-            Console.WriteLine($"Erreur : {response.StatusCode}");
+            string gpt3ApiUrl = "https://api.openai.com/v1/engines/davinci/completions";
+
+            var requestData = new
+            {
+                prompt = inputText,
+                max_tokens = 100, // Nombre maximal de tokens dans la réponse
+                temperature = 0.7, // Réglez la température selon vos préférences
+                api_key = openaiApiKey
+            };
+
+            var response = await httpClient.PostAsJsonAsync(gpt3ApiUrl, requestData);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var responseContent = await response.Content.ReadAsStringAsync();
+                // Analysez la réponse JSON pour obtenir la sortie générée par GPT-3
+                // Dans cet exemple, la sortie générée est directement utilisée comme texte corrigé.
+                return responseContent;
+            }
+            else
+            {
+                Console.WriteLine("La requête vers l'API OpenAI a échoué.");
+                return inputText; // Retournez le texte d'origine en cas d'erreur.
+            }
         }
     }
+    }
 
-    static async Task TraductionAsync() //async
+    /*static async Task TraductionAsync() //async
     {
         string apiKey = "VOTRE_CLE_API"; // Remplacez par votre clé d'API OpenAI
 
@@ -87,9 +102,9 @@ internal class Program
         string texteTraduit = await TraduireEnAnglais( api, texteAFR);
 
         Console.WriteLine("Texte traduit en anglais : " + texteTraduit);
-    }
+    }*/
 
-    static async Task<string> TraduireEnAnglais(OpenAIAPI api, string texte)
+    /*static async Task<string> TraduireEnAnglais(OpenAIAPI api, string texte)
     {
         var request = new CompletionRequest
         {
@@ -107,7 +122,7 @@ internal class Program
         }
 
         return "La traduction a échoué.";
-    }
+    }*/
 
     static void CreateReactApp() //async
     {
